@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --color-background: #10121b;
+  --color-nav-background: #191d2b;
+  --color-text: #a4acc4;
+  --color-text-heading: #fff;
+  --color-blue: #037fff;
+}
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #0056d898;
+  border-radius: 3.125rem;
+}
+body::-webkit-scrollbar-track {
+  background-color: var(--color-nav-background);
+}
+html[data-theme="dark"] {
+  --color-background: #f1f1f1;
+  --color-nav-background: #e4e4e4;
+  --color-text: #313131;
+  --color-text-heading: #151515;
+}
+body {
+  color: var(--color-text);
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 30rem) {
+  html {
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 43.75rem) {
+  html {
+    font-size: 90%;
+  }
+}
+.loader {
+  margin: 10% auto;
+}
+.App {
+  .main-content {
+    background-color: var(--color-background);
+    min-height: 100vh;
+    background-image: url(./assets/dots.svg);
+    display: grid;
+    position: relative;
+    .content {
+      margin: 2rem 5rem;
+      @media screen and (min-width: 112.5rem) {
+        margin: 5rem 15rem;
+      }
+      @media screen and (min-width: 75rem) {
+        margin: 2rem 8rem;
+      }
+      @media screen and (max-width: 56.25rem) {
+        margin: 2rem 4rem;
+      }
+      @media screen and (max-width: 37.5rem) {
+        margin: 2rem 2rem;
+      }
+    }
+  }
+}
+.title {
+  margin-bottom: 5rem;
+}

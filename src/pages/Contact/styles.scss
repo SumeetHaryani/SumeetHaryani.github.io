@@ -1,0 +1,37 @@
+.contact-page {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 6rem;
+  .map-section {
+    width: 97%;
+    padding: 1rem;
+    background-color: var(--color-nav-background);
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 1270px) {
+    grid-template-columns: repeat(1, 1fr);
+    .map-section {
+      width: 100%;
+      height: 50vh;
+      margin-bottom: 1rem;
+    }
+  }
+  .contact-detail {
+    width: 100%;
+    .social {
+      background-color: var(--color-nav-background);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  margin-bottom: -20px;
+}

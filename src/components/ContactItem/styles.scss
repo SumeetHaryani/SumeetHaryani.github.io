@@ -1,0 +1,32 @@
+.contact-item {
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-nav-background);
+    padding: 3rem 0;
+    a,
+    p {
+      color: var(--color-blue);
+      text-decoration: none;
+    }
+
+    img {
+      padding: 1rem;
+      border: .0625rem solid #2e344e;
+      margin-left: 1rem;
+      width: 16%;
+    }
+    .contact-details {
+      margin-left: 1rem;
+
+      h6 {
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
