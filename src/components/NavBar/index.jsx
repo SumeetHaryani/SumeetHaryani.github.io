@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <header>
       <nav className="nav">
-        <a href="index.html" className="nav-logo">
+        <a href="#homePage" className="nav-logo">
         <img src={logo} alt="" />
         </a>
         <ul className={click ? "nav-list active" : "nav-list"}>
