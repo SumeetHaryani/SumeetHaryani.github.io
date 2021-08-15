@@ -26,8 +26,8 @@ export default function PortfolioPage() {
         }
       }
     });
-    setCategories([currentCategory, ...set]);
-  }, []);
+    setCategories(["All", ...set]);
+  }, [projects]);
 
   const filter = (category) => {
     if (category === "All") {
@@ -57,7 +57,7 @@ export default function PortfolioPage() {
   return (
     <div id="portfoliosPage" className="portfolio-page" data-aos="fade-right">
       <div className="title">
-        <Title title={"Portfolios"} />
+        <Title title={"Portfolio"} />
       </div>
       <div className="portfolios-data">
         <Categories

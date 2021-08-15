@@ -17,9 +17,9 @@ export default function AboutSection() {
       <div className="about-info">
         <p className="about-text">{summary}</p>
         <SocialLinks profiles={profiles} />
-        <Button to="#">Get Resume</Button>
+        <Button to="https://drive.google.com/file/d/1MLtV-8Ac0oFwVN-XWIZOJgYBRoBWVjnF">Resume</Button>
         <Button secondary to="#skills">
-          My Skills
+          Skills
         </Button>
       </div>
     </div>

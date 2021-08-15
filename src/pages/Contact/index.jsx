@@ -34,7 +34,7 @@ export default function ContactPage() {
             ></iframe>
           </div>
           <div className="contact-detail">
-            <ContactItem icon={phone} text={"+91 8169534216"} title={"Phone"} />
+            <ContactItem icon={phone} text={"+91 9022761922"} title={"Phone"} />
             <ContactItem
               icon={email}
               text={"sumeetharyani3@gmail.com"}
@@ -42,7 +42,7 @@ export default function ContactPage() {
             />
             <div className="social">
               <SocialLinks profiles={profiles} />
-              <Button to="">Get Resume</Button>
+              <Button to="https://drive.google.com/file/d/1MLtV-8Ac0oFwVN-XWIZOJgYBRoBWVjnF">Resume</Button>
             </div>
           </div>
         </div>

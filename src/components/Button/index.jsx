@@ -7,6 +7,8 @@ export default function Button({ children, secondary, to, handleCLick }) {
       className={secondary ? "btn-secondary" : "btn"}
       href={to}
       onClick={handleCLick}
+      target="_blank"
+      rel="noreferrer"
     >
       {children}
     </a>

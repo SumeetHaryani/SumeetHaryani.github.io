@@ -14,7 +14,7 @@ export default function AboutPage() {
       <Title title={"About Me"} />
       <AboutSection />
       <div id="skills">
-        <Title title={"My Skills"} />
+        <Title title={"Skills"} />
         <div className="skill-container">
           {skills.map(({ name, rating }, idx) => (
             <div data-aos="fade-up-right" key={idx}>

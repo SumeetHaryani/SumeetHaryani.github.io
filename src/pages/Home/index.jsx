@@ -24,13 +24,12 @@ export default function HomePage() {
         </h1>
         <p>{headline}</p>
         <SocialLinks profiles={profiles} />
-        <Button to={"#"}>Get Resume</Button>
+        <Button to={"https://drive.google.com/file/d/1MLtV-8Ac0oFwVN-XWIZOJgYBRoBWVjnF"}>Resume</Button>
         <Button secondary to={"#aboutPage"}>
           About me
         </Button>
       </header>
       <div className="hero-img" data-aos="fade-left">
-        {/* <img src={img} width="100%" height="auto" alt="" /> */}
         <object type="image/svg+xml" data={heroImg}>svg-animation</object>
       </div>
     </div>
