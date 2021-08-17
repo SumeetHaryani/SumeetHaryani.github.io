@@ -42,7 +42,7 @@ export default function ContactPage() {
             />
             <div className="social">
               <SocialLinks profiles={profiles} />
-              <Button to="https://drive.google.com/file/d/1MLtV-8Ac0oFwVN-XWIZOJgYBRoBWVjnF">Resume</Button>
+              <Button to="https://drive.google.com/file/d/1MLtV-8Ac0oFwVN-XWIZOJgYBRoBWVjnF" target="_blank">Resume</Button>
             </div>
           </div>
         </div>
