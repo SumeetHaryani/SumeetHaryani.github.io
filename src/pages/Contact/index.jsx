@@ -10,7 +10,7 @@ import "./styles.scss";
 
 export default function ContactPage() {
   const {
-    basics: { profiles },
+    basics: { profiles, url },
   } = useContext(UserContext);
 
   return (
@@ -42,7 +42,7 @@ export default function ContactPage() {
             />
             <div className="social">
               <SocialLinks profiles={profiles} />
-              <Button to="https://drive.google.com/file/d/1MLtV-8Ac0oFwVN-XWIZOJgYBRoBWVjnF" target="_blank">Resume</Button>
+              <Button to={url} target="_blank">Resume</Button>
             </div>
           </div>
         </div>

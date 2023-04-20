@@ -8,7 +8,7 @@ import "./styles.scss";
 
 export default function HomePage() {
   const {
-    basics: { name, headline, profiles },
+    basics: { name, headline, profiles, url },
   } = useContext(UserContext);
 
   return (
@@ -24,13 +24,17 @@ export default function HomePage() {
         </h1>
         <p>{headline}</p>
         <SocialLinks profiles={profiles} />
-        <Button to={"https://bit.ly/sumeeth"} target="_blank">Resume</Button>
+        <Button to={url} target="_blank">
+          Resume
+        </Button>
         <Button secondary to={"#aboutPage"}>
           About me
         </Button>
       </header>
       <div className="hero-img" data-aos="fade-left">
-        <object type="image/svg+xml" data={heroImg}>svg-animation</object>
+        <object type="image/svg+xml" data={heroImg}>
+          svg-animation
+        </object>
       </div>
     </div>
   );
