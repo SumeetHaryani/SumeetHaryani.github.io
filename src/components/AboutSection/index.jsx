@@ -6,7 +6,7 @@ import "./styles.scss";
 
 export default function AboutSection() {
   const {
-    basics: { profiles, summary, image },
+    basics: { profiles, summary, image, url },
   } = useContext(UserContext);
 
   return (
@@ -17,7 +17,9 @@ export default function AboutSection() {
       <div className="about-info">
         <p className="about-text">{summary}</p>
         <SocialLinks profiles={profiles} />
-        <Button to="https://drive.google.com/file/d/1MLtV-8Ac0oFwVN-XWIZOJgYBRoBWVjnF" target="_blank">Resume</Button>
+        <Button to={url} target="_blank">
+          Resume
+        </Button>
         <Button secondary to="#skills">
           Skills
         </Button>
